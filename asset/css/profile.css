@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+.logo {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+span {
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+}
+.span1 {
+  color: #3366ff;
+}
+.span2 {
+  color: #ff3d71;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f4f7ff;
+}
+
+.navbar .menu .active {
+  color: #3366ff;
+  border-bottom: 2px solid #3366ff;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background-color: fff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.profile-name {
+  font-weight: bold;
+}
+.sub-content {
+  display: flex;
+}
+.left {
+  width: 25%;
+  margin-top: 50px;
+  padding-left: 70px;
+  padding-right: 58px;
+}
+.right {
+  width: 75%;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-right: 70px;
+}
+.form-content {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.form-content-in {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+.title {
+  display: flex;
+  font-size: 20;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  padding-top: 46px;
+}
+
+.profile-in {
+  height: 55px;
+  width: 55px;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+.profile-name-in {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.name-bold {
+  font-size: 14;
+  font-weight: bold;
+}
+.sub-name {
+  font-size: 12;
+  color: #373a42c2;
+}
+.names {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.profile-img {
+  display: flex;
+  height: 21px;
+  width: 21px;
+  border: none;
+}
+.sub-content-menu {
+  display: flex;
+  gap: 25px;
+}
+.sub-content-menu-in {
+  display: flex;
+  gap: 25px;
+  padding-left: 45px;
+}
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  letter-spacing: 1px;
+}
+.type {
+  font-size: 14;
+  font-weight: bold;
+}
+option {
+  display: flex;
+  flex-direction: column;
+}
+.type-blue {
+  font-size: 14;
+  font-weight: bold;
+  color: #3366ff;
+}
+.type-red {
+  font-size: 14;
+  font-weight: bold;
+  color: #f03800;
+}
+.profile-img-red {
+  display: flex;
+  height: 21px;
+  width: 21px;
+  border: none;
+}
+.form-table {
+  margin-left: 50px;
+}
+.inputs {
+  height: 55px;
+  border-radius: 15px;
+  width: 315px;
+  border: 1px solid #c1c5d0;
+  color: #c1c5d0;
+  padding-left: 25px;
+}
+td {
+  padding-bottom: 50px;
+  height: 55px;
+}
+u {
+  color: #3366ff;
+}
+.form-text {
+  width: 150px;
+}
+.post button {
+  color: white;
+  background-color: #3366ff;
+  width: 315px;
+  height: 61px;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+.form-left-right {
+  display: flex;
+}
+.form-left {
+  width: 60%;
+}
+.form-right {
+  width: 40%;
+}
+.form-profile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.photo {
+  margin-bottom: 50px;
+}
+button {
+  height: 40px;
+  background-color: transparent;
+  color: #3366ff;
+  border-radius: 10px;
+  border: 1px solid #3366ff;
+  font-size: 14;
+  font-weight: bold;
+  width: 100%;
+  max-width: 255;
+  margin-bottom: 25px;
+}
+.size {
+  font-size: 12;
+  color: #373a42b4;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.line-mid {
+  border-left: 1px solid #c1c5d044;
+}
+.footer-content {
+  padding-top: 100px;
+  padding-left: 218px;
+  padding-right: 218px;
+}
+.part {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 75px;
+}
+.part1 {
+  width: 40%;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.text-logo {
+  font-size: 14;
+  color: #373a42;
+  margin-bottom: 15px;
+}
+.sosmed {
+  display: flex;
+  gap: 15px;
+}
+.part2 {
+  width: 20%;
+}
+.footer-title {
+  font-size: 16;
+  font-weight: bold;
+  color: #373a42;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.footer-link {
+  font-size: 14;
+  color: #c1c5d0;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.part3 {
+  width: 20%;
+}
+.part4 {
+  width: 20%;
+}
+.copyright {
+  font-size: 16;
+  color: #5a7184;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
