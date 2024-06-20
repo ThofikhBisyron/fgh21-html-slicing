@@ -1,9 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+@media (max-width: 999px) {
+  .logo {
+    justify-content: space-between;
+    margin-top: -1px !important;
+  }
+  .flex-logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo-list{
+    display: unset !important;
+  }
+  .list-button{
+    border: none;
+  }
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+  .button-navbar{
+    justify-content: center;
+  }
+  nav {
+    display: unset !important;
+    flex-direction: column;
+  }
+  .button-navbar{
+    display: none !important;
+  }
+  
+  
+}
+
+.list-button:hover{
+  background-color: #788abf;
+}
+  
+.flex-logo{
+  display: flex;
+  align-items: center;
+}
 .logo {
   margin-bottom: 30px;
   margin-top: 40px;
   display: flex;
   align-items: center;
+}
+.logo-list{
+  display: none;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -30,6 +77,7 @@ span {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .menu {
   display: flex;
   gap: 50px;
@@ -140,6 +188,7 @@ span {
   margin-bottom: 50px;
   display: flex;
   gap: 30px;
+  overflow-x: scroll;
 }
 .event-box {
   background-color: aqua;
@@ -147,6 +196,7 @@ span {
   width: 260px;
   border-radius: 25px;
   display: flex;
+  flex-shrink: 0;
 }
 .box-detail {
   background-image: url(./event_1.svg);
@@ -238,6 +288,7 @@ span {
   width: 260px;
   border-radius: 25px;
   display: flex;
+  flex-shrink: 0;
 }
 .box-detail2 {
   background-image: url(./event_2.svg);
