@@ -30,9 +30,25 @@
   }
   .button-navbar{
     display: none !important;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  
+  .button-left{
+    width: 100%;
+  }
+  .button-right{
+    width: 100%;
+  }
+  .arrow-hp{
+    display: unset !important;
+  }
+  .arrow-calendar{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .list-button:hover{
@@ -250,6 +266,9 @@ span {
   border-radius: 10px;
   align-items: center;
   align-content: center;
+}
+.arrow-hp{
+  display: none;
 }
 .profile-avatar {
   display: flex;
