@@ -1,6 +1,8 @@
 <html lang="en">
   <head>
     <title>daftar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/css/daftar.css" />
   </head>
   <body>
@@ -12,17 +14,19 @@
           <img src="./asset/img/gambar1.svg" alt="" />
           <img src="./asset/img/gambar2.svg" alt="" />
         </div>  
-        <div class="circle">
+        <div class="circle" id="circle">
         <div class="title-text">Sign Up</div>
         <div class="sub-title">Already have an account? <a>Log In</a></div>
         <div class="circle-in">
-        <div class="input-form"><input type="text" placeholder="Full Name" /></div>
-        <div class="input-form"><input type="email" placeholder="Email" /></div>
-        <div class="input-form"><input type="password" placeholder="Password" /></div>
-        <div class="input-form"><input type="password" placeholder="Confirm Password" /></div>
+       
+        <div class="input-form"><input type="text" name="Name" placeholder="Full Name" id="fullname" /></div>
+        <div class="input-form"><input type="email" name="email" placeholder="Email" id="email" /></div>
+        <div class="input-form"><input type="password" name="password" placeholder="Password" id="password" /></div>
+        <div class="input-form"><input type="password" name="confirmpassword" placeholder="Confirm Password" id="confirmpassword" /></div>
         </div>
-        <div class="input-cek"><input type="checkbox" class="cek">Accept terms and condition</div>  
-        <button type="submit">Sign Up</button>
+        <div class="input-cek"><input type="checkbox" class="cek" id="cek">Accept terms and condition</div>  
+        <button type="submit" id="button-signup">Sign Up</button>
+        
         </div>
         </div>
       </div>
@@ -78,5 +82,7 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
+    <script src="./asset/js/daftar.js">
+    </script> 
   </body>
 </html>
