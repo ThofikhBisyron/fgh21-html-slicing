@@ -126,7 +126,7 @@ body {
   margin-bottom: 50px;
 }
 .map-detail {
-  background: url(./map.svg);
+  background: url(./img/map.svg);
   top: 0;
   left: 0;
   width: 100%;
@@ -167,7 +167,7 @@ body {
   width: 50%;
 }
 .detail-img {
-  background: url(./event_1.svg);
+  background: url(./img/event_1.svg);
   height: 486px;
   max-width: 450px;
   box-sizing: border-box;
