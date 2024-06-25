@@ -90,12 +90,13 @@
     </div>
     </div>
   </div>
-    <div class="event">
+    <div class="event" id="evente">
       <div class="event-box"><a href="./event.html">
         <div class="box-detail">
           <div class="content-box">
             <div class="fill-content">
-              <div>Wed, 15 Nov, 4:00 PM</div>
+              <div id="fill"></div>
+         
               <div class="letter-space">Sights & Sounds Exhibition</div>
             </div>
             <div class="profile-avatar">
@@ -433,54 +434,31 @@
                 <img src="./asset/img/footer-ig.svg" alt="" />
               </div>
               <div class="twitter">
-                <img src="./asset/img/footer-x.svg" alt="" />
+                <img src="./asset/img/footer-x.svg" alt="">
               </div>
             </div>
           </div>
           <div class="part2">
             <div class="footer-title">Wetick</div>
-            <div class="footer-link">About Us</div>
-            <div class="footer-link">Feature</div>
-            <div class="footer-link">Blog</div>
-            <div class="footer-link">Payments</div>
-            <div class="footer-link">Mobile App</div>
+            <div id="footer-link-1">
+          </div>
           </div>
           <div class="part3">
             <div class="footer-title">Features</div>
-            <div class="footer-link">Booking</div>
-            <div class="footer-link">Create event</div>
-            <div class="footer-link">Discover</div>
-            <div class="footer-link">Register</div>
+            <div id="footer-link-2">
+          </div>
           </div>
           <div class="part4">
             <div class="footer-title">Company</div>
-            <div class="footer-link">Partnership</div>
-            <div class="footer-link">Help</div>
-            <div class="footer-link">Terms of Service</div> 
-            <div class="footer-link">Privacy Policy</div>
-            <div class="footer-link">Sitemap</div>
+            <div id="footer-link-3">
+            </div>
           </div>
         </div>
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
-    <script>
-      const nav = document.getElementById("nav");
-      const menu = document.getElementById("btn");
-      const menulist = nav.getElementsByClassName("menu").item(0);
-      const buttonnav = nav.getElementsByClassName("button-navbar").item(0);
-      menu.onclick = () => {
-        if (menulist.getAttribute("style")){
-          menulist.removeAttribute("style")
-        }else {
-          menulist.setAttribute("style", "display: unset")
-        }
-        if (buttonnav.getAttribute("style")){
-          buttonnav.removeAttribute("style")
-        }else{
-          buttonnav.setAttribute("style", "display: unset !important")
-        }
-      };
+    <script src="./asset/js/index.js">
+      
     </script>
   </body> 
 </html>

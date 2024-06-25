@@ -1,26 +1,22 @@
-// form
-const circle = document.getElementById("circle")
-const button = document.getElementById("button-signup")
+// navbar
+const nav = document.getElementById("nav");
+      const menu = document.getElementById("btn");
+      const menulist = nav.getElementsByClassName("menu").item(0);
+      const buttonnav = nav.getElementsByClassName("button-navbar").item(0);
+      menu.onclick = () => {
+        if (menulist.getAttribute("style")){
+          menulist.removeAttribute("style")
+        }else {
+          menulist.setAttribute("style", "display: unset")
+        }
+        if (buttonnav.getAttribute("style")){
+          buttonnav.removeAttribute("style")
+        }else{
+          buttonnav.setAttribute("style", "display: unset !important")
+        }
+      };
 
-button.onclick = ()  => {
-    const fullname =  document.getElementById("fullname").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confirmpassword = document.getElementById("confirmpassword").value
-    const cek = document.getElementById("cek").checked
-    
-    if (fullname === "" || email === "" || password === "" || confirmpassword === "") {
-        window.alert("Form must be filled out");
-    } else if (password !== confirmpassword){
-        window.alert("password do not match")
-    } else if (!cek) {
-        window.alert("You must accept the term and conditions bro")
-    } else {
-        window.location.href = "index.html"
-    }
-
-}
-// footer
+//   footer
 const footer1 = document.getElementById("footer-link-1");
 const footer2 = document.getElementById("footer-link-2");
 const footer3 = document.getElementById("footer-link-3");
@@ -57,4 +53,20 @@ for (let i = 0; i < contentFooter3.length; i++) {
   item.className = "footer-link";
   item.textContent = contentFooter3[i];
   footer3.appendChild(item);
+}
+
+// List Event
+const box1 = document.getElementById("fill")
+
+const contentevent = [
+    "Wed, 15 Nov, 4:00 PM",
+]
+const contentevent2 = [
+    "Thu, 16 Nov, 7:00 PM",
+]
+
+for (let i = 0; i < contentevent.length; i++) {
+    const item = document.createElement("div");
+    item.textContent = contentevent[i];
+    box1.appendChild(item);
 }
