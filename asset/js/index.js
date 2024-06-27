@@ -56,17 +56,112 @@ for (let i = 0; i < contentFooter3.length; i++) {
 }
 
 // List Event
-const box1 = document.getElementById("fill")
 
-const contentevent = [
-    "Wed, 15 Nov, 4:00 PM",
-]
-const contentevent2 = [
-    "Thu, 16 Nov, 7:00 PM",
-]
+// event 1
 
-for (let i = 0; i < contentevent.length; i++) {
-    const item = document.createElement("div");
-    item.textContent = contentevent[i];
-    box1.appendChild(item);
-}
+const events = document.getElementsByClassName("event-box");
+
+  Array.from(events).forEach((event) => {
+  const eventBox = document.createElement("div");
+  eventBox.className = "event-box";
+  event.appendChild(eventBox);
+
+  const boxDetail = document.createElement("div");
+  boxDetail.className = "box-detail";
+  eventBox.appendChild(boxDetail);
+
+  const contentBox = document.createElement("div");
+  contentBox.className = "content-box";
+  boxDetail.appendChild(contentBox);
+
+  const fillContent = document.createElement("div");
+  fillContent.className = "fill-content";
+  contentBox.appendChild(fillContent);
+
+  const eventDate = document.createElement("div");
+  eventDate.textContent = "Wed, 15 Nov, 4:00 PM";
+  fillContent.appendChild(eventDate);
+
+  const letterSpace = document.createElement("div");
+  letterSpace.className = "letter-space";
+  letterSpace.textContent = "Sights & Sounds Exhibition";
+  fillContent.appendChild(letterSpace);
+
+  const profileAvatar = document.createElement("div");
+  profileAvatar.className = "profile-avatar";
+  contentBox.appendChild(profileAvatar);
+
+  const pictAvatar = [
+    "./asset/img/avatar1.png",
+    "./asset/img/avatar2.png",
+    "./asset/img/avatar3.png",
+    "./asset/img/avatar4.png",
+  ];
+
+  pictAvatar.forEach((link) => {
+    const picture = document.createElement("div");
+    const pict = document.createElement("img");
+    pict.setAttribute("src", link);
+    pict.setAttribute("alt", "Attendant");
+    picture.appendChild(pict);
+    profileAvatar.appendChild(picture);
+  });
+  
+  event.onclick = () => {
+    window.location.href = "./event.html"
+  }
+});
+
+// event 2
+const events2 = document.getElementsByClassName("event-box2");
+
+  Array.from(events2).forEach((event2) => {
+  const eventBox2 = document.createElement("div");
+  eventBox2.className = "event-box2";
+  event2.appendChild(eventBox2);
+
+  const boxDetail2 = document.createElement("div");
+  boxDetail2.className = "box-detail2";
+  eventBox2.appendChild(boxDetail2);
+
+  const contentBox2 = document.createElement("div");
+  contentBox2.className = "content-box2";
+  boxDetail2.appendChild(contentBox2);
+
+  const fillContent2 = document.createElement("div");
+  fillContent2.className = "fill-content2";
+  contentBox2.appendChild(fillContent2);
+
+  const eventDate2 = document.createElement("div");
+  eventDate2.textContent = "Wed, 15 Nov, 4:00 PM";
+  fillContent2.appendChild(eventDate2);
+
+  const letterSpace2 = document.createElement("div");
+  letterSpace2.className = "letter-space";
+  letterSpace2.textContent = "Sights & Sounds Exhibition";
+  fillContent2.appendChild(letterSpace2);
+
+  const profileAvatar2 = document.createElement("div");
+  profileAvatar2.className = "profile-avatar2";
+  contentBox2.appendChild(profileAvatar2);
+
+  const pictAvatar2 = [
+    "./asset/img/avatar1.png",
+    "./asset/img/avatar2.png",
+    "./asset/img/avatar3.png",
+    "./asset/img/avatar4.png",
+  ];
+
+  pictAvatar2.forEach((link2) => {
+    const picture2 = document.createElement("div");
+    const pict2 = document.createElement("img");
+    pict2.setAttribute("src", link2);
+    pict2.setAttribute("alt", "Attendant");
+    picture2.appendChild(pict2);
+    profileAvatar2.appendChild(picture2);
+  });
+
+  event2.onclick = () => {
+    window.location.href = "./event.html"
+  }
+});
