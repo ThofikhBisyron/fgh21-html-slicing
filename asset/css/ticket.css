@@ -67,7 +67,7 @@ body {
   height: 600px;
 }
 .left-img {
-  background: url(./ticket.svg);
+  background: url(./img/ticket.svg);
   top: 0;
   left: 0;
   width: 100%;
