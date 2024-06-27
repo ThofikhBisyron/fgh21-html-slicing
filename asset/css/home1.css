@@ -61,6 +61,112 @@
   .date .arrow-right{
     display: none;
   }
+  .event {
+    margin-left: 30px !important;
+  }
+  .content-discover {
+    display: unset !important;
+  }
+  .event-blue1 {
+    margin-left: 43px;
+  }
+  .event-text-blue {
+    font-size: 24px !important;
+  }
+  .background-blue {
+    width: 315px !important;
+  }
+  .event-blue3 {
+    display: none !important;
+  }
+  .event-blue2 div:nth-child(3) {
+    display: none;
+  }
+  .event-blue2 {
+    align-items: center;
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin-bottom: 40px;
+  }
+  .category-type {
+    justify-content: unset !important;
+    gap: 50px;
+    flex-shrink: 0;
+    padding-left: 34px !important;
+    overflow: hidden;
+  }
+  .event-black {
+    font-size: 24;
+  }
+  .sub-event {
+    overflow-x: scroll;
+    justify-content: flex-start !important;
+    margin-bottom: 0px !important; 
+  }
+  .sub-event-content {
+    height: 400px;
+    flex-shrink: 0;
+  }
+  .sub-arrow-left {
+    display: none !important;
+  }
+  .sub-arrow-right {
+    display: none !important;
+  }
+  .content-black-in {
+    margin-top: 100px !important;
+  }
+  .logo-black1 {
+    display: none;
+  }
+  .logo-black {
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+  }
+  .background-black {
+    height: 700px !important;
+  }
+  .logo-black-hidden {
+    display: unset !important;
+    height: 70px !important;
+    width: 800px !important;
+  }
+  .logo-black2 {
+    display: flex !important;
+    justify-content: center;
+    gap: 73px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .logo-black3 {
+    display: flex !important;
+    justify-content: center;
+    gap: 73px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .logo-black4 {
+    display: flex !important;
+    justify-content: center;
+    gap: 73px;
+    align-items: center;
+  }
+  .footer-content {
+    display: unset;
+  }
+  .part {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .part1 {
+    margin-bottom: 50px;
+  }
+  .copyright {
+    padding-left: 30px;
+  }
+
 }
 
 a {
