@@ -1,24 +1,32 @@
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Event</title>
-    <link rel="stylesheet" href="./asset/css/event.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <link rel="stylesheet" href="./asset/css/event.css" />
   </head>
-  <body>
-    <div class="navbar">
+  <body> 
+    <div class="navbar" id="nav">
       <div class="logo">
-        <img src="./asset/img/logo_1.svg" alt="" class="logo1">
+        <div class="flex-logo">
+        <a href="index.html">
+          <img src="./asset/img/logo_1.svg" alt="" class="logo1" />
+        </a>
         <span class="span1">We</span><span class="span2">Tick</span>
+        </div>
+      <div class="logo-list"><button class="list-button" id="btn"><img src="./asset/img/logo-list.svg" alt=""></button>
+      </div>   
       </div>
-      <div class="menu">
-        <a href="index.html"><div class="active">Home</div></a>
-        <div>Create Event</div>
-        <div>Location</div>
+      <div class="menu" id="menu">
+        <div class="active"><a href="index.html">Home</div></a>
+        <div><a href="create-event.html">Create Event</a></div>
+        <div><a href="index.html#location">Location</a></div>
       </div>
-      <div class="profile">
+      <div class="profile" id="profile">
         <div>
-          <img src="./asset/img/profile.svg" alt="">
+          <a href="profile.html">
+            <img src="./asset/img/profile.svg" alt="" />
+          </a>
         </div>
         <div class="profile-name">jhon Tomson</div>
       </div>
@@ -28,6 +36,10 @@
         <div class="content-img">
           <div class="detail-img">
             <div class="gradient-img"></div>
+            <div class="add-favorite">
+              <img src="./asset/css/img/favorite.svg" alt="" class="edit-img-list">
+              <div class="add-list"> Add to Wishlist</div>
+            </div>
           </div>
         </div>
         <div class="content-event">
@@ -36,22 +48,23 @@
             <div class="place-time">
               <div class="place">
                 <div class="place-img">
-                  <img src="./asset/img/place-1.svg" alt="">
+                  <img src="./asset/img/place-1.svg" alt="" />
                 </div>
                 <div>Jakarta, Indonesia</div>
               </div>
               <div class="time">
                 <div class="time-img">
-                  <img src="./asset/img/place-2.svg" alt="">
+                  <img src="./asset/img/place-2.svg" alt="" />
                 </div>
                 <div>Wed, 15 Nov, 4:00 PM</div>
               </div>
             </div>
             <div class="attendees">Attendees</div>
             <div class="avatar">
-              <img src="./asset/img/avatar.svg" alt="">
+              <img src="./asset/img/avatar.svg" alt="" />
             </div>
           </div>
+          <div class="detail">
           <div class="event-detail">
             <div class="title">Event Detail</div>
             <div class="event-description">
@@ -67,11 +80,75 @@
                 <div class="map-detail"></div>
               </div>
               <div class="button-buy">
-                <a href="./ticket.html"><button type="button" class="buy">Tickets</button></a>
+                <a href="ticket.html">
+                  <button type="button" class="buy">Buy Tickets</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-hp">
+      <div class="img-hp">
+        <div class="edit-bg-hp">
+          <div class="gradient-img-hp">
+            <div class="content-img-hp">
+              <div class="title-hp">
+                <div class="name-event">Sights & Sounds Exhibition</div>
+                <div class="logo-event">
+                  <img src="./asset/css/img/favorite.svg" alt="" class="edit-logo-hp">
+                </div>
+              </div>
+              <div class="location-hp">
+                <div class="logo-location">
+                  <img src="./asset/img/place-1.svg" alt="">
+                </div>
+                <div class="name-place-hp">
+                  Jakarta, Indonesia
+                </div>
+              </div>
+              <div class="location-hp">
+                <div class="logo-location">
+                  <img src="./asset/img/place-2.svg" alt="">
+                </div>
+                <div class="name-place-hp">
+                  Wed, 15 Nov, 4:00 PM
+                </div>
+              </div>
+              <div class="attendees-hp">
+                <div class="name-attendees-hp">Attendees</div>
+                <div class="avatar-hp">
+                  <img src="./asset/img/avatar.svg" alt="" class="edit-avatar-hp">
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="event-detail-hp">
+      <div class="title-name1">
+        <div class="title-name-hp">
+          Event Detail
+        </div>
+        <div class="sub-title-name">
+          After his controversial art exhibition "Tear and Consume" back in November 2018, in which guests were invited to tear up…
+        </div>
+        <div class="read-hp">
+          Read More
+        </div>
+      </div>
+      <div class="title-name2">
+        <div class="title-name-hp">
+          Location
+        </div>
+        <div class="img-map-hp">
+        </div>
+      </div>
+      <div class="title-name3">
+        <button type="button" class="edit-button-hp">Buy Tickets</button>
       </div>
     </div>
     <div class="footer">
@@ -94,7 +171,7 @@
                 <img src="./asset/img/footer-ig.svg" alt="" />
               </div>
               <div class="twitter">
-                <img src="./asset/img/footer-x.svg" alt="">
+                <img src="./asset/img/footer-x.svg" alt="" />
               </div>
             </div>
           </div>
@@ -125,5 +202,8 @@
         <div class="copyright">&copy; 2020 Wetick All Rights Reserved</div>
       </div>
     </div>
+    <script src="./asset/js/event.js">
+      
+    </script>
   </body>
 </html>

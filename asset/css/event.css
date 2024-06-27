@@ -1,7 +1,175 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
-a {
-  text-decoration: none;
-  color: black;
+
+@media (max-width: 770px) {
+  .navbar {
+    display: unset !important;
+    flex-direction: column;
+  }
+  .menu {
+    display: none !important;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu div:nth-child(3) {
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .profile {
+    display: none !important;
+    text-align: center;
+  }
+  .logo {
+    justify-content: space-between !important;
+    margin: 1px 1px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo-list {
+    display: unset !important;
+  }
+  #btn {
+    background: transparent;
+    border: none;
+  }
+  .content {
+    display: none;
+  }
+  .content-hp {
+    display: unset !important;
+  }
+  .img-hp {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 486px;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+  }
+  .edit-bg-hp {
+    background: url(./img/event_1.svg);
+    height: 486px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gradient-img-hp {
+    background-image: linear-gradient(to bottom, transparent, black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .content-img-hp {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 486px;
+    justify-content: center;
+  }
+  .title-hp {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 15px;
+  }
+  .name-event {
+    font-size: 24;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .edit-logo-hp {
+    height: 24px;
+    width: 24px;
+  }
+  .location-hp {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .name-attendees-hp {
+    margin-bottom: 10px;
+    padding-top: 15px;
+  }
+  .edit-avatar-hp {
+    height: 30px;
+  }
+  .event-detail-hp {
+    display: unset !important;
+  }
+  .title-name1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+  }
+  .title-name-hp {
+    font-size: 20px;
+    font-weight: bold;
+    color: #373a42;
+    letter-spacing: 1px;
+  }
+  .sub-title-name {
+    font-size: 12;
+    color: #373a42c0;
+  }
+  .read-hp {
+    color: #3366ff;
+    font-size: 12;
+  }
+  .title-name2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+  .img-map-hp {
+    height: 151px;
+    width: 100%;
+    background: url(./img/map.svg);
+    border-radius: 20px;
+  }
+  .title-name3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 100px;
+  }
+  .edit-button-hp {
+    background-color: #3366ff;
+    color: white;
+    width: 100%;
+    height: 55px;
+    border-radius: 15px;
+    border: none;
+    letter-spacing: 1px;
+  }
+  .footer-content {
+    display: unset;
+  }
+  .part {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .part1 {
+    margin-bottom: 50px;
+  }
+  .copyright {
+    padding-left: 30px;
+  }
+}
+.flex-logo {
+  display: flex;
+  align-items: center;
+}
+.logo-list {
+  display: none;
 }
 .logo {
   margin-bottom: 30px;
@@ -26,9 +194,13 @@ body {
   background-color: #f4f7ff;
 }
 
-.navbar .menu .active {
+.menu .active a {
   color: #3366ff;
   border-bottom: 2px solid #3366ff;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .menu {
   display: flex;
@@ -54,7 +226,6 @@ body {
 .profile-name {
   font-weight: bold;
 }
-/* batas nav */
 .sub-content {
   display: flex;
   margin-top: 50px;
@@ -173,7 +344,6 @@ body {
   box-sizing: border-box;
   border-radius: 40px;
   background-position: center;
-  overflow: hidden;
 }
 .gradient-img {
   background-image: linear-gradient(to bottom, transparent, black);
@@ -182,6 +352,28 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 40px;
+  margin-bottom: 50px;
+}
+.add-favorite {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.edit-img-list {
+  height: 36px;
+  width: 36px;
+}
+.add-list {
+  color: #373a42;
+  font-size: 20;
+  font-weight: bold;
+}
+.content-hp {
+  display: none;
+}
+.event-detail-hp {
+  display: none;
 }
 .footer-content {
   padding-top: 100px;
